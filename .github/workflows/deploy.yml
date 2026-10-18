@@ -1,0 +1,13 @@
+name: requal-wf-deploy
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  requal-wf-deploy:
+    name: requal-wf-deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: aucune action (ce workflow ne sert qu'à vérifier le refus d'un workflow privilégié)
+        run: echo "ne doit jamais être déclenché par le broker"
