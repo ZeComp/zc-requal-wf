@@ -1,0 +1,13 @@
+name: requal-wf-ci
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  requal-wf-ci:
+    name: requal-wf-ci
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: succès rapide et reproductible
+        run: echo "requalification : exécution ordinaire réussie"
